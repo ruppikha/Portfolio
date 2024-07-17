@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ruppikha Sree Shankar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: rgb(26, 47, 85);
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #ffffff 3px solid;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+        header li {
+            float: right;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+            margin-left: 20px;
+        }
+        header #branding h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        section#showcase {
+            min-height: 400px;
+            background: rgb(26, 47, 85);
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+        section#showcase h1 {
+            font-size: 3em;
+            margin-top: 0;
+        }
+        section#about, section#experience, section#projects, section#contact {
+            padding: 20px;
+            background: #e9e9e9;
+            color: #333;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        section#about h2, section#experience h2, section#projects h2, section#contact h2 {
+            text-align: center;
+        }
+        .skills, .contact-info, .extracurricular, .awards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .skills div, .contact-info div, .extracurricular div, .awards div {
+            background: white;
+            margin: 10px;
+            padding: 20px;
+            width: calc(50% - 20px);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        footer {
+            background: rgb(26, 47, 85); /* Changed to blue background */
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            header nav {
+                float: none;
+                text-align: center;
+            }
+            header nav li {
+                float: none;
+                display: block;
+                padding: 10px;
+            }
+            .skills div, .contact-info div, .extracurricular div, .awards div {
+                width: calc(100% - 20px);
+            }
+        }
+        .highlight {
+            color: rgb(212, 186, 186); 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Ruppikha Sree Shankar</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>I am <span class="highlight">Ruppikha Shankar</span>. A Computer Science Engineering Junior.</h1>
+            <p>Bangalore, Karnataka | ruppikha@gmail.com | +91 9686320308</p>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hi, I am Ruppikha Sree Shankar, a DevOps Intern at Mphasis. I am currently pursuing my degree in Computer Science Engineering at Manipal Institute of Technology. I have a strong passion for technology and enjoy working on projects that involve machine learning, automation, and software design.</p>
+        <div class="skills">
+            <div>
+                <h3>Skills</h3>
+                <ul>
+                    <li>Object-Oriented Programming</li>
+                    <li>Automation Scripting</li>
+                    <li>CI/CD pipelines</li>
+                    <li>Linux</li>
+                    <li>Azure</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Current Projects</h3>
+                <ul>
+                    <li>Developing an Electronic Health Record (EHR) dashboard</li>
+                    <li>Automating patient visit summaries</li>
+                    <li>Conducting image analysis for breast cancer detection</li>
+                    <li>Creating a risk prediction model for various diseases</li>
+                </ul>
+                <p>Skills: NLP, CNNs, Python, Software Design, Machine Learning, Image Processing, HTML</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+        <div>
+            <h3>Mphasis - DevOps Intern</h3>
+            <p>May 2024 - Present</p>
+            <p>Skills: Object-Oriented Programming, Automation Scripting, CI/CD pipelines, Linux, Azure, Java, Python.</p>
+        </div>
+        <div>
+            <h3>Manipal Institute of Technology - Research Intern</h3>
+            <p>June 2024 - Present</p>
+            <ul>
+                <li>Developing an Electronic Health Record (EHR) dashboard to integrate and streamline patient data in different healthcare levels.</li>
+                <li>Automating generation of comprehensive patient visit summaries and conprescription analyses.</li>
+                <li>Conducting image analysis for breast cancer detection to enhance early diagnosis capabilities.</li>
+                <li>Creating a risk prediction model for various diseases to facilitate proactive healthcare interventions.</li>
+            </ul>
+            <p>Skills: NLP, CNNs, Python, Software Design, Machine Learning, Image Processing, HTML</p>
+        </div>
+        <div>
+            <h3>Project DronAid - AI Team Member</h3>
+            <p>April 2023 - Present</p>
+            <ul>
+                <li>Developed and optimized obstacle avoidance BUG algorithms tailored for UAV in dynamic environments.</li>
+                <li>Worked on autonomous drone operations using Raspberry Pi, integrating hardware and software for UAV functionality.</li>
+                <li>Engineered computer vision algorithms for drones, enabling features like object detection and person tracking.</li>
+            </ul>
+            <p>Skills: Algorithms, Deep Learning, C++, CNNs, ROS, YOLO, Linux, Python, DroneKit, Raspberry Pi, Gazebo, Software Design</p>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div>
+            <h3>Breast Cancer Classifier</h3>
+            <p>November 2023 - January 2024</p>
+            <ul>
+                <li>Developed a breast cancer classifier model using TensorFlow and Keras, designed to analyze histopathological features extracted from breast tissue images.</li>
+                <li>Applied deep learning, convolutional neural networks, and data analysis techniques to achieve high diagnostic accuracy.</li>
+            </ul>
+            <p>Skills: Python, CNNs, Keras, Tensorflow, Image Processing</p>
+        </div>
+        <div>
+            <h3>Travel Itinerary Planner System</h3>
+            <p>October 2023 - November 2023</p>
+            <ul>
+                <li>Developed a system for creating customized vacation itineraries, optimizing time allocation & budget management.</li>
+                <li>Leveraged software development, user interface design, and algorithm optimization.</li>
+            </ul>
+            <p>Skills: JAVA, Object-Oriented Programming, JAVAFX, Data Structures</p>
+        </div>
+        <div>
+            <h3>Arduino Based Obstacle Avoidance Robot</h3>
+            <p>November 2023 - January 2024</p>
+            <ul>
+                <li>Utilizes a servo-mounted ultrasonic sensor for dynamic obstacle detection and maneuvering controlled by Arduino.</li>
+                <li>Commands motor driver for directional adjustment to steer the robot away from obstacles.</li>
+                <li>Employs servo motor to pivot the ultrasonic sensor, facilitating wide-area obstacle scanning.</li>
+                <li>Executes directional changes based on obstacle detection for efficient navigation.</li>
+            </ul>
+            <p>Skills: Embedded C, Arduino</p>
+        </div>
+    </section>
+
+    <section id="extracurricular" class="container">
+        <h2>Extracurricular</h2>
+        <div class="extracurricular">
+            <div>
+                <h3>Core Committee Member, Association of Computing Machinery</h3>
+                <p>January 2023 - February 2024</p>
+                <p>Organized and conducted a workshop on sign language detection utilizing hand gestures. Employed deep learning techniques, CNNs, and computer vision algorithms.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="awards" class="container">
+        <h2>Awards</h2>
+        <div class="awards">
+            <div>
+                <h3>1st Place - Start-up Expo, IIT Guwahati</h3>
+                <p>January 2024</p>
+                <p>Represented Project DronAid, showcasing the drone’s autonomous capabilities via Raspberry Pi and Python scripts, and the app for drone delivery orders.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Ruppikha Sree Shankar | Portfolio © 2024</p>
+    </footer>
+</body>
+</html>
